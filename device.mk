@@ -46,7 +46,10 @@ PRODUCT_PACKAGES += \
     FrameworksResMyron \
     MyronEuiccOverlay \
     SettingsOverlayMyron \
-    SystemUIResMyron
+    SettingsProviderOverlayMyron \
+    SystemUIResMyron \
+    WifiOverlayMyron
 
 # Udfps
 TARGET_HAS_UDFPS := true
+
