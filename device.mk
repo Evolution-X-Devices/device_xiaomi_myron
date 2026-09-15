@@ -47,3 +47,6 @@ PRODUCT_PACKAGES += \
     MyronEuiccOverlay \
     SettingsOverlayMyron \
     SystemUIResMyron
+
+# Udfps
+TARGET_HAS_UDFPS := true
