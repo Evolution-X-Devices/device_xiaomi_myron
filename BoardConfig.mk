@@ -16,7 +16,7 @@ include device/xiaomi/myron-miuicamera/BoardConfig.mk
 # Display
 TARGET_SCREEN_DENSITY := 520
 
-# Dtb/o
+# DTBO
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
 
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
+# Platform
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit from the proprietary version
 include vendor/xiaomi/myron/BoardConfigVendor.mk
